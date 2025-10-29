@@ -35,3 +35,52 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+:root {
+  /* PRIMARY - Indigo */
+  --ion-color-primary: #6750a4;
+  --ion-color-primary-rgb: 103, 80, 164;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #5b4490;
+  --ion-color-primary-tint: #7662b3;
+
+  /* SECONDARY - Teal */
+  --ion-color-secondary: #006a6a;
+  --ion-color-secondary-rgb: 0, 106, 106;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-shade: #005c5c;
+  --ion-color-secondary-tint: #1a7979;
+
+  /* TERTIARY - Pink */
+  --ion-color-tertiary: #c0005b;
+  --ion-color-tertiary-rgb: 192, 0, 91;
+  --ion-color-tertiary-contrast: #ffffff;
+
+  /* SUCCESS */
+  --ion-color-success: #4caf50;
+  --ion-color-success-contrast: #ffffff;
+
+  /* WARNING */
+  --ion-color-warning: #ff9800;
+  --ion-color-warning-contrast: #000000;
+
+
+  --ion-color-danger: #f44336;
+  --ion-color-danger-contrast: #ffffff;
+
+  /* MEDIUM / DARK */
+  --ion-color-medium: #666666;
+  --ion-color-dark: #1a1a1a;
+
+  /* FONDOS - M3 Surface */
+  --ion-background-color: #f8f9fa;
+  --ion-background-color-rgb: 248, 249, 250;
+
+  --ion-text-color: #1a1a1a;
+  --ion-text-color-rgb: 26, 26, 26;
+
+  /* CARD */
+  --ion-card-background: #ffffff;
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Notas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="nueva()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-list *ngIf="notas.length > 0">
+    <ion-item *ngFor="let n of notas" (click)="editar(n.id)">
+      <ion-label>
+        <h2>{{ n.titulo || 'Sin título' }}</h2>
+        <p>{{ n.contenido | slice:0:60 }}...</p>
+      </ion-label>
+      <ion-button slot="end" fill="clear" color="danger" (click)="$event.stopPropagation(); borrar(n.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+  <div *ngIf="notas.length === 0" class="ion-text-center ion-padding">
+    <p>Vacio</p>
+    <ion-button expand="block" (click)="nueva()">
+      <ion-icon name="add" slot="start"></ion-icon>
+      Crear nota
+    </ion-button>
+  </div>
+</ion-content>
